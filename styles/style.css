@@ -54,3 +54,48 @@
     min-height: 100vh;
     padding: 15rem 5% 2rem;
   }
+
+  /* блок Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 5%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+}
+
+.header.sticky {
+    border-bottom: 0.1rem solid #2a263f44;
+}
+
+.logo {
+  width: 8rem;
+  filter: drop-shadow(0 0 2rem var(--dark-color));
+  cursor: default;
+}
+
+.navbar a {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: 0.3s;
+}
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+
+
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
+} 
