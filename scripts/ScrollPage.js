@@ -18,3 +18,10 @@ window.onscroll = () => {
     }
   });
 };
+
+
+/* нижняя подсветка шапки при позиции НЕ сверху */
+
+let header = document.querySelector("header");
+
+header.classList.toggle("sticky", window.scrollY > 100);
